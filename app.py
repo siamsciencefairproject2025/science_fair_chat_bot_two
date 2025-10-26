@@ -57,9 +57,9 @@ SYSTEM_INSTRUCTION_BN = ""
 
 SYSTEM_INSTRUCTION_EN = ""
 
-with open("USER_INSTRUCTIONS_BN","r") as file:
+with open("USER_INSTRUCTIONS_BN.txt","r") as file:
     SYSTEM_INSTRUCTION_BN = file.content()
-with open("USER_INSTRUCTIONS_EN","r") as file:
+with open("USER_INSTRUCTIONS_EN.txt","r") as file:
     SYSTEM_INSTRUCTION_EN = file.content()
 
 def get_system_instruction(lang):
