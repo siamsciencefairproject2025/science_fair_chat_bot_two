@@ -58,9 +58,9 @@ SYSTEM_INSTRUCTION_BN = ""
 SYSTEM_INSTRUCTION_EN = ""
 
 with open("USER_INSTRUCTIONS_BN.txt","r") as file:
-    SYSTEM_INSTRUCTION_BN = file.content()
+    SYSTEM_INSTRUCTION_BN = file.read()
 with open("USER_INSTRUCTIONS_EN.txt","r") as file:
-    SYSTEM_INSTRUCTION_EN = file.content()
+    SYSTEM_INSTRUCTION_EN = file.read()
 
 def get_system_instruction(lang):
     return SYSTEM_INSTRUCTION_BN if lang == 'bn' else SYSTEM_INSTRUCTION_EN
